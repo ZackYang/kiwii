@@ -9,6 +9,7 @@ README.rdoc
 /public/system
 /coverage/
 /spec/tmp
+/config/application.yml
 **.orig
 rerun.txt
 pickle-email-*.html
