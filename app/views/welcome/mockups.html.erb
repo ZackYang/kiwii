@@ -1,0 +1,12 @@
+<%= javascript_include_tag :application, :cache => true %>
+
+<iframe id="preview" src="http://iarouse.com/dist-flatify/v2.1/index.html" frameborder="0" width="100%"></iframe>
+
+
+<script>
+(function(){
+  
+  $('iframe').attr("height", window.innerHeight - 30);
+  
+})();
+</script>
