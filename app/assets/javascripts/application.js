@@ -28,5 +28,14 @@
 //= require isotope.pkgd.min
 //= require portfolio
 //= require testimonials  
-  
 //= require_tree .
+//= require_self
+  
+$(function() {
+  
+  $(".language-selector").on("click", function(e) {
+    document.cookie = "locale=" + $(this).attr("data-language");
+    location.reload();
+  });
+  
+})  

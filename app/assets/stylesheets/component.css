@@ -351,11 +351,22 @@
 }
 
 .content-boxes > .content-boxes-text > ul {
-  padding-left: 18px;
+  padding-left: 2px;
 }
 
 .content-boxes > .content-boxes-text > ul > li {
   line-height: 30px;
+  list-style-type: none;
+}
+
+@media (min-width: 768px) {
+  .content-boxes > .content-boxes-text > ul > li {
+    line-height: 30px;
+    list-style-type: disc;
+  }
+  .content-boxes > .content-boxes-text > ul {
+   padding-left: 18px;
+  }
 }
 
 

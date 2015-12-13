@@ -11,7 +11,7 @@
                 
       <a class="navbar-brand" href="#page-top">
         <%= image_tag "kiwii_logo.png" %>
-        Kiwii
+        <%= t "Kiwii" %>
       </a>
     </div>
     <!-- //.navbar-header -->
@@ -19,19 +19,38 @@
     <div class="navbar-collapse collapse navbar-rj-collapse">
       <ul class="nav navbar-nav navbar-right">
         <li class="page-scroll">
-          <a href="#who-we-are">About</a>
+          <a href="#who-we-are"><%= t :about %></a>
         </li>
         <li class="page-scroll">
-          <a href="#our-process">Process</a>
+          <a href="#our-process"><%= t :process %></a>
         </li>
         <!-- <li class="page-scroll">
           <a href="#latest-work">Work</a>
-        </li>
-        <li class="page-scroll">
-          <a href="#meet-team">Team</a>
         </li> -->
         <li class="page-scroll">
-          <a href="#contact-us">Contact</a>
+          <a href="#meet-team"><%= t :team %></a>
+        </li>
+        <li class="page-scroll">
+          <a href="#contact-us"><%= t :contact %></a>
+        </li>
+        <li>
+          <a class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <span class="flag-icon flag-icon-<%= language_to_contry %>"></span>
+            <i class="fa fa-angle-down"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+            <li>
+              <a class="language-selector" data-language="en">
+              <span class="flag-icon flag-icon-au"></span>English
+              <a>
+              
+            </li>
+            <li>
+              <a class="language-selector" data-language="zh-CN">
+                <span class="flag-icon flag-icon-cn"></span>简体中文
+              </a>
+            </li>
+          </ul>
         </li>
       </ul>
     </div>
